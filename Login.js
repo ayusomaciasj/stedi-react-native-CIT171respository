@@ -17,10 +17,15 @@ const Login = () => {
         style={styles.input}
         onChangeText={setOneTimePassword}
         value={oneTimePassword}
-        placeholder="1234"
+        placeholder="1234"  
         keyboardType="numeric"
         secureTextEntry = {true}
       />
+      <TouchableOpacity style={styles.button}
+        onPress={onPress}
+      >
+        <Text>LogIn</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
